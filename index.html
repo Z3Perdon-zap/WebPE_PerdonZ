@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-$END$
+ <main class="page">
+     <section class="card">
+         <p class="greeting"> Hi, I am</p>
+         <h2 class="name" id="name">Loading...</h2>
+         <div class="avatar">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                 <path d="M18 20a6 6 0 0 0-12 0" />
+                 <circle cx="12" cy="10" r="4" />
+                 <circle cx="12" cy="12" r="10" />
+             </svg>
+         </div>
+         <ul class="details" id="details"></ul>
+         <div class="controls">
+             <button class="mode-btn" id="mode-btn"></button>
+             <label class="switch">
+                 <input type="checkbox" id="mode-toggle" aria-label="Toggle light mode" />
+                 <span class="track"><span class="thumb"></span></span>
+             </label>
+         </div>
+     </section>
+ </main>
+<script src="script.js"></script>
 </body>
 </html>
